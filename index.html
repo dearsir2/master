@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>new blub</title>
+      <script type="text/javascript">
+        function light(show){
+            var pic;
+            if(show==0){
+                pic="bulboff";
+            }
+            else
+            {pic="bulbon";}
+            document.getElementById('bulb').src=pic;
+        }
+      </script>
+      <style>
+        img{
+          width: 250px;
+          height: 300px;
+          margin-left: 500px;
+          margin-top: 60px;
+          border: 5px solid black;
+          border-radius: 50px;
+        }
+        button{
+          font-size: 30PX;
+          margin-left: 10px;
+          margin-top: 10px;
+          background-color: black;
+          color: white;
+          border-radius: 5px;
+          border: 05px solid black;
+        }
+        button:hover{
+          background-color: blue;
+        }
+        h1{
+          margin-left: 500px;
+        }
+        p{
+          margin-left: 500px;
+          color:rgb(0, 8, 255);
+          font-size:20px;
+        }
+        body{
+          background-color: darkgray;
+          border: 10px solid black;
+        }
+       </style>
+    </head>
+   <body>
+      <h1><u>BULB ON/OFF</u></h1>
+      <p>dearsir2</p>
+      <img id="bulb" src="bulboff" width="100px" height="180px">
+      <p>
+        <button type="button"onclick="light(1)">Light ON</button>
+        <button type="button"onclick="light(0)">Light OFF</button>
+      </p>
+   </body>
+</html>
